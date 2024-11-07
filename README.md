@@ -140,3 +140,5 @@ python server.py
 ```
 
 ---
+
+![Thanks](./logos.png)
