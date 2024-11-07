@@ -1,0 +1,15 @@
+DATASET_LOCATION: "Datasets/csv/bscw_dataset.csv"
+SEP: ";"
+
+DATASET_DESCRIPTION: "Example dataset on BSCW"
+
+INPUT_LABELS: ["mach","aoa"]
+OUTPUT_LABELS: ["cl","cm"]
+FIDELITY_COLUMN_NAME: "fidelity"
+FIDELITIES: ["low","mid","cfd"]
+
+LF_TRAIN_SIZE: 0.70
+MF_TRAIN_SIZE: 0.70
+MF_VALID_SIZE: 0.15
+HF_TRAIN_SIZE: 0.20
+HF_VALID_SIZE: 0.20

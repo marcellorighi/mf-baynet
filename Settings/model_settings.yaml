@@ -1,0 +1,30 @@
+# Name of the model to be used or saved
+MODEL_NAME_TL_HF: "BNN_TL_HF"
+MODEL_NAME_TL_MF: "BNN_TL_MF"
+MODEL_NAME_MF: "BNN_MF"
+MODEL_NAME_LF: "BNN_LF"
+MODEL_NAME_HF: "BNN_HF"
+MODEL_NAME_CK: "CoKriging"
+
+# Mean (mu) for the prior distribution in the Bayesian layers of the low-fidelity/TL model
+MU_LF: 0
+# Mean (mu) for the prior distribution in the Bayesian layers of the mid-fidelity model
+MU_MF: 0
+# Mean (mu) for the prior distribution in the Bayesian layers of the high-fidelity model
+MU_HF: 0
+# Standard deviation (std) for the prior distribution in the Bayesian layers of the low-fidelity/TL model
+STD_LF: 0.0126
+# Standard deviation (std) for the prior distribution in the Bayesian layers of the mid-fidelity model
+STD_MF: 0.0526
+# Standard deviation (std) for the prior distribution in the Bayesian layers of the high-fidelity model
+STD_HF: 0.0596
+# Architecture of the low-fidelity/TL model, specifying the number of units in each hidden layer
+UNITS_LF: [176,176,144,176,176]
+# Architecture of the mid-fidelity model, specifying the number of units in each hidden layer
+UNITS_MF: [160,80]
+# Architecture of the high-fidelity model, specifying the number of units in each hidden layer
+UNITS_HF: [128,160,176]
+# Device on which the model will be trained (e.g., "cpu", "cuda" for GPU)
+DEVICE: "cpu"
+# Random seed for reproducibility
+SEED: 42

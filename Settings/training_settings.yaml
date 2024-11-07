@@ -1,0 +1,61 @@
+# Path where the trained model will be saved
+MODEL_PATH: "AIModels/EXAMPLE/"
+# Path to the YAML file containing dataset settings
+DATASET_YAML_PATH: "Datasets/dataset_config_example.yaml"
+
+# Early stopping patience for low-fidelity model training
+PATIENCE_LF: 150
+# Maximum number of epochs for low-fidelity model training
+N_EPOCHS_LF: 5000
+# Batch size for low-fidelity model training
+BATCH_SIZE_LF: 32
+# Learning rate for low-fidelity model training
+LR_LF: 0.0016
+
+# Early stopping patience for mid-fidelity model training
+PATIENCE_MF: 500
+# Maximum number of epochs for mid-fidelity model training
+N_EPOCHS_MF: 10000
+# Batch size for mid-fidelity model training
+BATCH_SIZE_MF: 32
+# Learning rate for mid-fidelity model training
+LR_MF: 0.0016
+
+# Early stopping patience for high-fidelity model training
+PATIENCE_HF: 1000
+# Maximum number of epochs for high-fidelity model training
+N_EPOCHS_HF: 100000
+# Batch size for high-fidelity model training
+BATCH_SIZE_HF: 32
+# Learning rate for high-fidelity model training
+LR_HF: 0.0016
+
+# Early stopping patience for transfer learning model training
+PATIENCE_TL_MF: 500
+# Maximum number of epochs for transfer learning model training
+N_EPOCHS_TL_MF: 8000
+# Batch size for transfer learning model training
+BATCH_SIZE_TL_MF: 32
+# Learning rate for transfer learning model training
+LR_TL_MF: 0.001
+# Number of layers to unfreeze for fine-tuning during transfer learning
+N_LAYER_TO_UNFREEZE_TL_MF: 3
+
+# Early stopping patience for transfer learning model training and finetune on high-fidelity
+PATIENCE_TL_HF: 500
+# Maximum number of epochs for transfer learning model training and finetune on high-fidelity
+N_EPOCHS_TL_HF: 8000
+# Batch size for transfer learning model training and finetune on high-fidelity
+BATCH_SIZE_TL_HF: 1
+# Learning rate for transfer learning model training and finetune on high-fidelity
+LR_TL_HF: 0.001
+# Number of layers to unfreeze for fine-tuning during transfer learning and finetune on high-fidelity
+N_LAYER_TO_UNFREEZE_TL_HF: 1
+
+# Flags to control whether to train each model component
+TRAIN_LF: true  # Train the low-fidelity model
+TRAIN_MF: true  # Train the mid-fidelity model
+TRAIN_HF: true  # Train the mid-fidelity model
+TRAIN_TL_MF: true  # Perform transfer learning on mid-fidelity
+TRAIN_TL_HF: true  # Perform transfer learning and finetune on high-fidelity
+TRAIN_CK: true  # Train the Co-Kriging model
